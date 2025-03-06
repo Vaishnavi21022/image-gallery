@@ -1,0 +1,61 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background:rgb(190, 190, 197); 
+  margin: 0px;
+  padding: 0px;
+}
+
+.image_size{
+  height: 200px;
+  width: 200px;
+  padding: 20px 30px 20px;
+}
+
+.image_size:hover{
+  cursor: pointer;
+  transform: scale(0.6);
+}
+
+.title{
+  text-align: center;
+  margin: 16px;
+  font-size: 10 rem;
+}
+
+.imagebox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 5px;
+  margin: 20px;
+  width: 90%;
+}
+
+.fullimage{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  
+}
+
+.fullimage img{
+  width: 40%;
+  max-width: 300px;
+  height: 45%;
+}
+
+.fullimage .closeicon{
+  position: absolute;
+  top:5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  background-color:none;
+}
